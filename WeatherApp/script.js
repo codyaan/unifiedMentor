@@ -289,7 +289,13 @@ async function getWeather(location){
 
 }catch{
     // Catching the error if user enters invalid location 
-    toastBar.style.top= "1.875rem"
+    if (window.matchMedia("(max-width: 780px)").matches) {
+        toastBar.style.top= "5.625rem"
+        // Viewport is less or equal to 780 pixels wide
+      } else {
+        // Viewport is greater than 780 pixels wide
+        toastBar.style.top= "1.875rem"
+      }
 }
 
 
