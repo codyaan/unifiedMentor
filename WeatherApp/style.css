@@ -546,12 +546,6 @@ body{
         font-size: 1.6rem;
     }
 
-
-
-    /* Making the toast bar responsive in other devices  */
-    .toast-bar{
-        top: 5.625rem;
-    }
 }
 
 
